@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="display"></div>
+            <div class="functions">
+                <button class="operation" id="AC" onclick="clearDisplay()">AC</button>
+                <button class="operation" id="del" onclick="deleteDisplay()">C</button>
+                <button class="operation" data-value="%" onclick="addToDisplay('%')">%</button>
+                <button class="operation" data-value="/" onclick="addToDisplay('/')">/</button>
+                <button class="operation num" data-value="7" onclick="addToDisplay('7')">7</button>
+                <button class="operation num" data-value="8" onclick="addToDisplay('8')">8</button>
+                <button class="operation num" data-value="9" onclick="addToDisplay('9')">9</button>
+                <button class="operation" data-value="*" onclick="addToDisplay('*')">*</button>
+                <button class="operation num" data-value="4" onclick="addToDisplay('4')">4</button>
+                <button class="operation num" data-value="5" onclick="addToDisplay('5')">5</button>
+                <button class="operation num" data-value="6" onclick="addToDisplay('6')">6</button>
+                <button class="operation" data-value="-" onclick="addToDisplay('-')">-</button>
+                <button class="operation num" data-value="1" onclick="addToDisplay('1')">1</button>
+                <button class="operation num" data-value="2" onclick="addToDisplay('2')">2</butt>
+                <button class="operation num" data-value="3" onclick="addToDisplay('3')">3</button>
+                <button class="operation" data-value="+" onclick="addToDisplay('+')">+</button>
+                <button class="operation" data-value="0" onclick="addToDisplay('0')">0</button>
+                <button class="operation" id="p-m" onclick="signChange()">+/-</button>
+                <button class="operation" onclick="addToDisplay('.')">.</button>
+                <button class="operation" data-value="=" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
